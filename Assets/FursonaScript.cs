@@ -157,7 +157,7 @@ public class FursonaScript : MonoBehaviour {
         int maxId = 0;
         int[] vals = new int[] { R, G, B, C, M, Y };
         for (int i = 1; i < 6; i++)
-            if (vals[i] > vals[maxId])
+            if (vals[i] >= vals[maxId])
                 maxId = i;
 
         TargetEyeColor = maxId;
@@ -180,7 +180,7 @@ public class FursonaScript : MonoBehaviour {
     {
         if(!_Solved && CheckColor(B1.Value, B2.Value, B3.Value) == COLORS[TargetEyeColor] && CheckColor(A1.Value,A2.Value,A3.Value) == COLORS[(TargetEyeColor + 3) % 6])
         {
-            if (new Colors[] { CheckColor(C1.Value, C2.Value, C3.Value), CheckColor(D1.Value, D2.Value, D3.Value), CheckColor(E1.Value, E2.Value, E3.Value), CheckColor(F1.Value, F2.Value, F3.Value) }.Where(c => c != Colors.Err).Distinct().Count() > 4)
+            if (new Colors[] { CheckColor(A1.Value, A2.Value, A3.Value), CheckColor(B1.Value, B2.Value, B3.Value), CheckColor(C1.Value, C2.Value, C3.Value), CheckColor(D1.Value, D2.Value, D3.Value), CheckColor(E1.Value, E2.Value, E3.Value), CheckColor(F1.Value, F2.Value, F3.Value) }.Where(c => c != Colors.Err).Distinct().Count() >= 6)
                 Solve();
         }
     }
@@ -194,7 +194,7 @@ public class FursonaScript : MonoBehaviour {
 
     private Colors CheckColor(float r, float g, float b)
     {
-        if ((r > 0.3f && r < 0.7f)|| (g > 0.3f && g < 0.7f)|| (b > 0.3f && b < 0.7f))
+        if ((r > 0.3f && r < 0.7f) || (g > 0.3f && g < 0.7f) || (b > 0.3f && b < 0.7f))
             return Colors.Err;
         if(r <= 0.3f)
         {

@@ -47,7 +47,7 @@ public class PhysicalSlider : MonoBehaviour {
         while (true)
         {
             Value -= Step;
-            Value = Mathf.Max(Value, 0);
+            Value = Mathf.Max(Value, 0f);
             UpdateFollower();
             yield return new WaitForSeconds(0.1f);
         }
@@ -58,7 +58,7 @@ public class PhysicalSlider : MonoBehaviour {
         while (true)
         {
             Value += Step;
-            Value = Mathf.Min(Value, 1);
+            Value = Mathf.Min(Value, 1f);
             UpdateFollower();
             yield return new WaitForSeconds(0.1f);
         }
