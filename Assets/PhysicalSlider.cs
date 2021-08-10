@@ -64,7 +64,7 @@ public class PhysicalSlider : MonoBehaviour {
         }
     }
 
-    private void UpdateFollower()
+    internal void UpdateFollower()
     {
         Follower.localPosition = Vector3.Lerp(LeftPosition.localPosition, RightPosition.localPosition, Value);
         OnUpdate();

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTANEFursona", "KTANEFursona.csproj", "{B0EAB414-A601-C4BD-7452-A3B1CC516F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTANEFursona.Editor", "KTANEFursona.Editor.csproj", "{18D5DE45-DC03-8229-E914-28E678E7FACE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0EAB414-A601-C4BD-7452-A3B1CC516F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0EAB414-A601-C4BD-7452-A3B1CC516F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0EAB414-A601-C4BD-7452-A3B1CC516F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0EAB414-A601-C4BD-7452-A3B1CC516F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D5DE45-DC03-8229-E914-28E678E7FACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D5DE45-DC03-8229-E914-28E678E7FACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D5DE45-DC03-8229-E914-28E678E7FACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D5DE45-DC03-8229-E914-28E678E7FACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
