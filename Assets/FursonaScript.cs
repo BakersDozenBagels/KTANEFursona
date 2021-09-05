@@ -70,7 +70,7 @@ public class FursonaScript : MonoBehaviour
                 R = li;
                 G = ui;
                 B = b;
-                C = sl;
+                C = bh;
                 M = p;
                 Y = ep;
                 break;
