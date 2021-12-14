@@ -35,7 +35,7 @@ public class FursonaScript : MonoBehaviour
     void Start()
     {
         _id = idCounter++;
-        speciesId = UnityEngine.Random.Range(0, CroppedMats.Length);
+        speciesId = UnityEngine.Random.Range(0, CroppedMats.Length - 1);
         Debug.LogFormat("[Fursona #{0}] Selected species: {1}", _id, NAMES[speciesId]);
         CroppedRenderer.material = CroppedMats[speciesId];
         HeadRenderer.material = HeadMats[speciesId];
@@ -182,6 +182,38 @@ public class FursonaScript : MonoBehaviour
 
     private void CheckColors()
     {
+        if(new Colors[] { CheckColor(A1.Value, A2.Value, A3.Value), CheckColor(B1.Value, B2.Value, B3.Value), CheckColor(C1.Value, C2.Value, C3.Value), CheckColor(D1.Value, D2.Value, D3.Value), CheckColor(E1.Value, E2.Value, E3.Value), CheckColor(F1.Value, F2.Value, F3.Value) }.All(c => c == Colors.Blue))
+        {
+            CroppedRenderer.material = CroppedMats[speciesId];
+            HeadRenderer.material = HeadMats[speciesId];
+            EyesRenderer.material = EyesMats[speciesId];
+            FleshRenderer.material = FleshMats[speciesId];
+            PrimaryRenderer.material = PrimaryMats[speciesId];
+            SecondaryRenderer.material = SecondaryMats[speciesId];
+            TertiaryRenderer.material = TertiaryMats[speciesId];
+            HeadRenderer.material.color = new Color(A1.Value, A2.Value, A3.Value);
+            EyesRenderer.material.color = new Color(B1.Value, B2.Value, B3.Value);
+            PrimaryRenderer.material.color = new Color(C1.Value, C2.Value, C3.Value);
+            SecondaryRenderer.material.color = new Color(D1.Value, D2.Value, D3.Value);
+            TertiaryRenderer.material.color = new Color(E1.Value, E2.Value, E3.Value);
+            FleshRenderer.material.color = new Color(F1.Value, F2.Value, F3.Value);
+        }
+        if(new Colors[] { CheckColor(A1.Value, A2.Value, A3.Value), CheckColor(B1.Value, B2.Value, B3.Value), CheckColor(C1.Value, C2.Value, C3.Value), CheckColor(D1.Value, D2.Value, D3.Value), CheckColor(E1.Value, E2.Value, E3.Value), CheckColor(F1.Value, F2.Value, F3.Value) }.All(c => c == Colors.Yellow))
+        {
+            CroppedRenderer.material = CroppedMats.Last();
+            HeadRenderer.material = HeadMats.Last();
+            EyesRenderer.material = EyesMats.Last();
+            FleshRenderer.material = FleshMats.Last();
+            PrimaryRenderer.material = PrimaryMats.Last();
+            SecondaryRenderer.material = SecondaryMats.Last();
+            TertiaryRenderer.material = TertiaryMats.Last();
+            HeadRenderer.material.color = new Color(A1.Value, A2.Value, A3.Value);
+            EyesRenderer.material.color = new Color(B1.Value, B2.Value, B3.Value);
+            PrimaryRenderer.material.color = new Color(C1.Value, C2.Value, C3.Value);
+            SecondaryRenderer.material.color = new Color(D1.Value, D2.Value, D3.Value);
+            TertiaryRenderer.material.color = new Color(E1.Value, E2.Value, E3.Value);
+            FleshRenderer.material.color = new Color(F1.Value, F2.Value, F3.Value);
+        }
         if(!_Solved && CheckColor(B1.Value, B2.Value, B3.Value) == COLORS[TargetEyeColor] && CheckColor(A1.Value, A2.Value, A3.Value) == COLORS[(TargetEyeColor + 3) % 6])
         {
             if(new Colors[] { CheckColor(A1.Value, A2.Value, A3.Value), CheckColor(B1.Value, B2.Value, B3.Value), CheckColor(C1.Value, C2.Value, C3.Value), CheckColor(D1.Value, D2.Value, D3.Value), CheckColor(E1.Value, E2.Value, E3.Value), CheckColor(F1.Value, F2.Value, F3.Value) }.Where(c => c != Colors.Err).Distinct().Count() >= 6)
@@ -249,7 +281,7 @@ public class FursonaScript : MonoBehaviour
 
         Regex r = new Regex("((?:#[0-9A-Fa-f]{3} |#[0-9A-Fa-f]{6} ){5}(?:#[0-9A-Fa-f]{3}|#[0-9A-Fa-f]{6}))");
         Regex rs = new Regex("([1-6]) ?(#[0-9A-Fa-f]{3}|#[0-9A-Fa-f]{6})");
-        
+
         Match rm = r.Match(command);
         Match rsm = rs.Match(command);
         if(rsm.Success)

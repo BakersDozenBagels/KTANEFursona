@@ -9509,7 +9509,7 @@ MonoBehaviour:
   Follower: {fileID: 4881307132344074}
   LeftButton: {fileID: 114752706292345726}
   RightButton: {fileID: 114000404473258336}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114031664167916286
 MonoBehaviour:
@@ -9864,7 +9864,7 @@ MonoBehaviour:
   Follower: {fileID: 4131677779925040}
   LeftButton: {fileID: 114166209768381906}
   RightButton: {fileID: 114563015450209524}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114190562222865266
 MonoBehaviour:
@@ -9882,7 +9882,7 @@ MonoBehaviour:
   Follower: {fileID: 4245579890612828}
   LeftButton: {fileID: 114875788755899482}
   RightButton: {fileID: 114377639004199394}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114191339638630926
 MonoBehaviour:
@@ -10036,6 +10036,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3c283c12a9e17f2448026ec903b13083, type: 2}
   - {fileID: 2100000, guid: 126130bb760d9134789d7caa50ee8702, type: 2}
   - {fileID: 2100000, guid: 0ad86d08226528d48a48fffa182fb940, type: 2}
+  - {fileID: 2100000, guid: a3fb7f1a8cc6e6d46ad9c19118ceafd8, type: 2}
   HeadMats:
   - {fileID: 2100000, guid: fc12dcabca10af74a946d7f7e9219784, type: 2}
   - {fileID: 2100000, guid: f32f20e45bdf3944cb2a99756af839db, type: 2}
@@ -10047,6 +10048,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 38d9d3126d5da7e428408dee1ad9374b, type: 2}
   - {fileID: 2100000, guid: 08804d0035befa04c88471c4adfe6dad, type: 2}
   - {fileID: 2100000, guid: 9c88a0febc98e3b4ea3234dd9528acca, type: 2}
+  - {fileID: 2100000, guid: 5e1edc9cf5a23c241a1576c0fd9c4da4, type: 2}
   EyesMats:
   - {fileID: 2100000, guid: 4e895ce0982a3b04bbab890c98e76edf, type: 2}
   - {fileID: 2100000, guid: 479a7e0928eeec243ae5043ec9f832fa, type: 2}
@@ -10058,6 +10060,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 64fa05262230c88408db06d327938afd, type: 2}
   - {fileID: 2100000, guid: a98b9624163298d4598144ac9be4aa71, type: 2}
   - {fileID: 2100000, guid: 1de3edba1b2ae0c4cb9b3e01a2bdc4a1, type: 2}
+  - {fileID: 2100000, guid: a3cca1a881f5cd246a5b6aae6152d7df, type: 2}
   FleshMats:
   - {fileID: 2100000, guid: 9b53e2b5328972d47a0a06f1307c6edb, type: 2}
   - {fileID: 2100000, guid: 60d33c6cff525d748baba88b39671d57, type: 2}
@@ -10069,6 +10072,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 561838edc98e8724a93d75dac565759f, type: 2}
   - {fileID: 2100000, guid: dc6c06f78ffa0814ebab7004a7eb7d20, type: 2}
   - {fileID: 2100000, guid: 85aa506b360b0d34abf635a285295b3a, type: 2}
+  - {fileID: 2100000, guid: 4b0cad9f1a01e454a9e4465d31ca81bf, type: 2}
   PrimaryMats:
   - {fileID: 2100000, guid: 425ca405e5e69e2459dd2aac8bb6234c, type: 2}
   - {fileID: 2100000, guid: 24543e075d52ae842a9ee56c837f0427, type: 2}
@@ -10080,6 +10084,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: a455bf1d084fe324a95020d6fa1d1bf1, type: 2}
   - {fileID: 2100000, guid: cc383301f899cae499b248191e81a40d, type: 2}
   - {fileID: 2100000, guid: de1746346cf1de74a81f5a5d2a18dcae, type: 2}
+  - {fileID: 2100000, guid: c306c5be76ba5a941bf8fa3949a219da, type: 2}
   SecondaryMats:
   - {fileID: 2100000, guid: 88d89bc35f15c3141b0dc70b9e74629f, type: 2}
   - {fileID: 2100000, guid: 783247d661cf0a0428895ce57fc8a6a1, type: 2}
@@ -10091,6 +10096,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0f1b022d136eb3f449a5ea640c2d172d, type: 2}
   - {fileID: 2100000, guid: f4695c21916eef44fa909e90e78ffef5, type: 2}
   - {fileID: 2100000, guid: de8df1d58c045714985a2beda3eab983, type: 2}
+  - {fileID: 2100000, guid: 7d4d8030a896be344a4978840c50f07f, type: 2}
   TertiaryMats:
   - {fileID: 2100000, guid: b97d823684250184080cb56f14bcbe37, type: 2}
   - {fileID: 2100000, guid: 1ae4d19a21663d9498dee0b67b2c32c1, type: 2}
@@ -10102,6 +10108,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 4cfb751b6255d174596b2821a25ed744, type: 2}
   - {fileID: 2100000, guid: 9a0b24c3000adde47abff0f478e66ef6, type: 2}
   - {fileID: 2100000, guid: 2ef30a68aa7812b46914946b6c3dcab7, type: 2}
+  - {fileID: 2100000, guid: e9d06caa5e9e5e344accc62558645e54, type: 2}
 --- !u!114 &114209760116301358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10157,7 +10164,7 @@ MonoBehaviour:
   Follower: {fileID: 4350033132722130}
   LeftButton: {fileID: 114458225796925304}
   RightButton: {fileID: 114579865689616594}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114230373303891628
 MonoBehaviour:
@@ -10201,7 +10208,7 @@ MonoBehaviour:
   Follower: {fileID: 4367000146968330}
   LeftButton: {fileID: 114192184587006496}
   RightButton: {fileID: 114373777267992584}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114287744205883930
 MonoBehaviour:
@@ -10451,7 +10458,7 @@ MonoBehaviour:
   Follower: {fileID: 4335673433659676}
   LeftButton: {fileID: 114470504347608982}
   RightButton: {fileID: 114522668354385646}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114389255354190332
 MonoBehaviour:
@@ -10591,7 +10598,7 @@ MonoBehaviour:
   Follower: {fileID: 4127031600528870}
   LeftButton: {fileID: 114579449670828760}
   RightButton: {fileID: 114194971418235976}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114435305597905212
 MonoBehaviour:
@@ -10666,7 +10673,7 @@ MonoBehaviour:
   Follower: {fileID: 4243917446054998}
   LeftButton: {fileID: 114475073402362900}
   RightButton: {fileID: 114088279052591134}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114458225796925304
 MonoBehaviour:
@@ -10774,7 +10781,7 @@ MonoBehaviour:
   Follower: {fileID: 4163046854744626}
   LeftButton: {fileID: 114066232767249690}
   RightButton: {fileID: 114575231216737212}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114476491356862956
 MonoBehaviour:
@@ -10805,7 +10812,7 @@ MonoBehaviour:
   Follower: {fileID: 4406517833036968}
   LeftButton: {fileID: 114435305597905212}
   RightButton: {fileID: 114416627360098046}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114499726871279926
 MonoBehaviour:
@@ -10923,7 +10930,7 @@ MonoBehaviour:
   Follower: {fileID: 4474746656833126}
   LeftButton: {fileID: 114541881479143106}
   RightButton: {fileID: 114194328102601042}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114538044472232088
 MonoBehaviour:
@@ -10989,7 +10996,7 @@ MonoBehaviour:
   Follower: {fileID: 4268411217217220}
   LeftButton: {fileID: 114948801640009840}
   RightButton: {fileID: 114590213727294310}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114556168031882800
 MonoBehaviour:
@@ -11364,7 +11371,7 @@ MonoBehaviour:
   Follower: {fileID: 4095986602913380}
   LeftButton: {fileID: 114766087653878776}
   RightButton: {fileID: 114747710891791654}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114677453355521908
 MonoBehaviour:
@@ -11508,7 +11515,7 @@ MonoBehaviour:
   Follower: {fileID: 4110904705886148}
   LeftButton: {fileID: 114904464608698366}
   RightButton: {fileID: 114748796375099930}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114726261156026580
 MonoBehaviour:
@@ -11610,7 +11617,7 @@ MonoBehaviour:
   Follower: {fileID: 4229035842917722}
   LeftButton: {fileID: 114701271863560670}
   RightButton: {fileID: 114408202610042850}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114751210433499248
 MonoBehaviour:
@@ -11641,7 +11648,7 @@ MonoBehaviour:
   Follower: {fileID: 4638184569981316}
   LeftButton: {fileID: 114976677161873958}
   RightButton: {fileID: 114764250575586112}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114752706292345726
 MonoBehaviour:
@@ -11790,7 +11797,7 @@ MonoBehaviour:
   Follower: {fileID: 4023783373879988}
   LeftButton: {fileID: 114852106109792674}
   RightButton: {fileID: 114820130216815908}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114820130216815908
 MonoBehaviour:
@@ -12139,7 +12146,7 @@ MonoBehaviour:
   Follower: {fileID: 4455035286811250}
   LeftButton: {fileID: 114869951368387466}
   RightButton: {fileID: 114438932391423384}
-  Step: 0.1
+  Step: 1
   Value: 0.5
 --- !u!114 &114932389740848888
 MonoBehaviour:
